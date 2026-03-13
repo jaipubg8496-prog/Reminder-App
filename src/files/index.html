@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Reminder</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+<div class="logo">TaskReminder</div>
+<div class="nav-links">
+<a href="dashboard.html">Dashboard</a>
+<a href="#">Tasks</a>
+<a href="profile.html">Profile</a>
+</div>
+</nav>
+
+<main class="container">
+
+<section class="task-form">
+<h2>Create Task</h2>
+
+<input id="title" placeholder="Task title">
+
+<textarea id="description" placeholder="Task description"></textarea>
+
+<input id="remind" type="datetime-local">
+
+<button id="createBtn">Create Task</button>
+
+</section>
+
+<section class="task-list">
+
+<h2>Your Tasks</h2>
+
+<div id="tasks"></div>
+
+</section>
+
+</main>
+<div id="reminderPopup" class="popup" style="display:none;">
+   <div class="popup-card">
+      <h3 id="popupTitle"></h3>
+      <p id="popupDesc"></p>
+
+      <div class="popup-actions">
+         <button id="acceptBtn">Accept</button>
+         <button id="rejectBtn">Reject</button>
+      </div>
+   </div>
+</div>
+
+<div id="toast-right"></div>
+<div id="toast-center"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

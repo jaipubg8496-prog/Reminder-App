@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Productivity Analytics</title>
+<link rel="stylesheet" href="dashboard.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+<div class="logo">TaskReminder</div>
+<div class="nav-links">
+<a href="#">Dashboard</a>
+<a href="task.html">Tasks</a>
+<a href="profile.html">Profile</a>
+</div>
+</nav>
+
+<div class="dashboard">
+
+<!-- STATS ROW -->
+<div class="stats-row">
+<div class="stat-card">
+<h4>Total Tasks</h4>
+<p id="totalTasks">0</p>
+</div>
+
+<div class="stat-card accept-stat">
+<h4>Accepted</h4>
+<p id="acceptCount">0</p>
+</div>
+
+<div class="stat-card reject-stat">
+<h4>Rejected</h4>
+<p id="rejectCount">0</p>
+</div>
+</div>
+
+<!-- CHART ROW -->
+<div class="chart-row">
+
+<div class="panel">
+<h3>Performance Ratio</h3>
+<canvas id="pieChart"></canvas>
+</div>
+
+<div class="panel">
+<h3>Task Volume</h3>
+<canvas id="barChart"></canvas>
+</div>
+
+</div>
+
+<!-- ORDER BOOK STYLE TASK FEED -->
+<div class="feed">
+
+<div class="feed-column accept-feed">
+<h3>Accepted Tasks</h3>
+<div id="acceptTasks"></div>
+</div>
+
+<div class="feed-column reject-feed">
+<h3>Rejected Tasks</h3>
+<div id="rejectTasks"></div>
+</div>
+
+</div>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

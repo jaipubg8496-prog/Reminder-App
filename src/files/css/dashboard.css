@@ -1,0 +1,152 @@
+body{
+background:#0B1220;
+color:#E2E8F0;
+font-family:Inter,system-ui;
+margin:0;
+}
+
+/* NAV */
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:16px 40px;
+background:#0F172A;
+border-bottom:1px solid #1E293B;
+}
+
+.logo{
+color:#2563EB;
+font-weight:700;
+}
+
+.nav-links a{
+margin-left:20px;
+color:#94A3B8;
+text-decoration:none;
+}
+
+/* LAYOUT */
+.dashboard{
+padding:30px;
+}
+
+/* STATS */
+.stats-row{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+margin-bottom:25px;
+}
+
+.stat-card{
+background:#111827;
+padding:20px;
+border-radius:12px;
+box-shadow:0 0 20px rgba(0,0,0,.6);
+}
+
+.stat-card h4{
+color:#64748B;
+margin:0;
+}
+
+.stat-card p{
+font-size:28px;
+margin-top:10px;
+}
+
+.accept-stat{
+border-left:4px solid #22C55E;
+}
+
+.reject-stat{
+border-left:4px solid #EF4444;
+}
+
+/* CHART PANELS */
+.chart-row{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+margin-bottom:30px;
+}
+
+.panel{
+background:#111827;
+padding:20px;
+border-radius:12px;
+}
+
+/* FEED */
+.feed{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.feed-column{
+background:#111827;
+padding:20px;
+border-radius:12px;
+height:350px;
+overflow:auto;
+}
+
+.task{
+padding:12px;
+margin-top:10px;
+border-radius:8px;
+font-size:14px;
+}
+
+.accept-feed .task{
+background:rgba(34,197,94,.15);
+border-left:3px solid #22C55E;
+}
+
+.reject-feed .task{
+background:rgba(239,68,68,.15);
+border-left:3px solid #EF4444;
+}
+
+@media(max-width:900px){
+.stats-row,
+.chart-row,
+.feed{
+grid-template-columns:1fr;
+}
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#111827;
+color:white;
+}
+
+.nav-links a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+}
+
+/* DELETE ACCOUNT BUTTON */
+
+.delete-btn{
+background:#111827;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+color:white;
+font-weight:600;
+cursor:pointer;
+width:100%;
+transition:.3s;
+margin-top:12px;
+}
+
+.delete-btn:hover{
+background:#000;
+}
